@@ -1,0 +1,244 @@
+* {
+	font: $textSize $textFamily;
+	color: rgb(88, 88, 88);
+}
+
+body {
+	background-color: $background;
+}
+a {
+	cursor: pointer;
+	cursor: hand;
+	pointer-events: auto;
+}
+.wrapper {
+	overflow-x: hidden;
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: $textBG;
+}
+
+.card-img-top {
+	border-radius: 0;
+}
+
+.half {
+	width: 50%;
+	display: inline-block;
+	margin: 0 40px;
+}
+
+.logo {
+	max-width: $logoNormal;
+}
+/* --=========================== Buttons ===========================-- */
+
+.switch {
+	width: fit-content;
+	background-color: $textBG;
+	border: 2px solid black;
+	padding: 5px;
+	a {
+		text-decoration: none;
+		color: #585858;
+		&:hover {
+			color: $textHover;
+		}
+	}
+	&:hover {
+		cursor: pointer;
+		cursor: hand;
+		pointer-events: auto;
+		background-color: $textBG_dark;
+	}
+}
+
+/* --=========================== Header  --===========================-- */
+header.hide {
+	top: -209px;
+}
+header {
+	z-index: 2;
+	transition: all 0.3s ease;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: $textBG;
+	.head {
+		padding: 25px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.half {
+		flex-basis: 50%;
+	}
+
+	#headthings {
+		text-align: right;
+
+		> * {
+			display: inline-block;
+		}
+	}
+
+	// img {
+	// 	max-width: 100px;
+	// }
+	//--========Nav========--
+	nav {
+		background-color: $bgNavbar;
+		.dropdown-menu {
+			border-radius: 0;
+		}
+	}
+}
+
+/* ----=========================== Main  --===========================-- */
+.alt-grid,
+.container {
+	width: 100%;
+	max-width: none;
+	padding: 0;
+}
+/* Auswahlbereich */
+.choose {
+	position: relative;
+	background-attachment: fixed;
+	height: 100vh;
+	text-align: center;
+	margin: auto;
+	@include BGImage($picBG);
+	filter: grayscale(10%) contrast(100%);
+
+	/* Bild färben*/
+	// &::before {
+	// 	@include Pseudo();
+	// 	left: 0;
+	// 	// @include filter($filterLeft, 0.3);
+	// }
+
+	// &::after {
+	// 	@include Pseudo();
+	// 	right: 0;
+	// 	// @include filter($filterRight, 0.3);
+	// }
+
+	> span,
+	> h3 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: white;
+		font-size: $textSizeChoose;
+		font-weight: bold;
+		text-align: center;
+		font-family: cursive;
+		text-shadow: 0px 0 1px rgba(0, 0, 0, 0.5);
+		z-index: 1;
+	}
+
+	/* Text */
+	> :first-child {
+		font-weight: 400;
+		font-size: 4.5rem;
+		letter-spacing: 5px;
+		top: 30%;
+	}
+
+	/* Das Pure Wohlbefinden*/
+	> span {
+		font-weight: 300;
+		font-size: 2rem;
+		top: 65%;
+	}
+
+	/* Linke Seite Buttons */
+	#left,
+	#right {
+		font-size: 25px;
+		// width: ;
+		position: absolute;
+		top: 85%;
+		transform: translateY(-10%);
+		margin: 0;
+		border: none;
+	}
+
+	#left {
+		left: 20%;
+	}
+
+	#right {
+		right: 20%;
+	}
+}
+
+#beschreibung {
+	background-color: $textBG_dark;
+}
+/*Infobox*/
+.infoBox {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 25px;
+	box-shadow: 5px 5px 7px grey;
+	background-color: $textBG;
+	h2 {
+		text-align: center;
+		color: $standOut;
+	}
+}
+
+#standort {
+	text-align: center;
+	margin: 25px;
+	> * {
+	}
+	h2 {
+		color: $standOut;
+	}
+	iframe {
+		width: 90%;
+		border: 2px solid black;
+	}
+}
+
+/* Tabele */
+
+// th:last-child {
+// 	text-align: left;
+// }
+/*----=========================== Footer --===========================--*/
+footer {
+	background-color: $footerBG;
+	padding: 50px;
+	* {
+		color: $textFooter;
+	}
+	div > div {
+		padding: 10px;
+		text-align: center;
+	}
+}
+
+#oeffnungszeieten {
+	div {
+		margin-top: 10px;
+	}
+}
+
+#allgInfo {
+	text-align: center;
+	a {
+		text-decoration: none;
+		color: $textFooter;
+	}
+	span > a > img {
+		width: 25px;
+		height: 25px;
+		vertical-align: auto;
+	}
+}

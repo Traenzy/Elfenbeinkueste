@@ -1,0 +1,18 @@
+@mixin filter($color, $opacity) {
+	background-color: $color;
+	opacity: $opacity;
+}
+
+@mixin BGImage($src) {
+	background-image: url($src);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@mixin Pseudo() {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 50%;
+	height: 100%;
+}

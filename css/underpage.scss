@@ -1,0 +1,94 @@
+@import "./function";
+@import "./variables";
+//hintergrund Bild
+#kosmetik {
+	background-image: url($kosmetikBG);
+}
+#lichtkosmetik {
+	background-image: url($lichtkosmetikBG);
+}
+// Auswahl Cards
+.card-group {
+	padding: 0 50px 25px 50px;
+	justify-content: center;
+	background-color: $textBG_dark;
+}
+
+.card {
+	height: fit-content;
+	min-width: 270px;
+	max-width: 270px;
+	margin: 50px 25px 50px 25px;
+	padding: 0;
+	border: 1px solid grey;
+	border-radius: 0;
+	box-shadow: 5px 5px 7px grey;
+	background-color: white;
+	h5 {
+		color: $standOut;
+	}
+	//lese mehr
+	.card-body > a {
+		color: white;
+		text-decoration: none;
+		padding: 5px;
+		border-radius: 5px;
+		background-color: $linkBG;
+	}
+	.card-body > a:hover {
+		background-color: $linkBG_hover;
+	}
+	.card-body > a:active {
+		background-color: $linkBG_click;
+	}
+}
+
+// Ohne des Linke Border geht weg
+.card-group > .card + .card {
+	border: 1px solid grey;
+	border-radius: 0;
+}
+
+#preisliste {
+	padding: 25px 50px 50px 50px;
+	h5 {
+		color: $standOut;
+	}
+}
+
+table {
+	margin: 0 auto;
+	table-layout: fixed;
+	tr {
+		* {
+			word-wrap: break-word;
+		}
+		// *:last-child {
+		// 	text-align: right;
+		// 	width: 360px;
+		// }
+	}
+}
+/*----=========================== Handy --===========================--*/
+@media screen and (max-width: 420px) {
+	#kosmetik {
+		background-image: url($kosmetikBGsmall);
+	}
+	#lichtkosmetik {
+		background-image: url($lichtkosmetikBGsmall);
+	}
+
+	//Preisliste
+	#preisliste {
+		padding: 25px 15px 50px 15px;
+	}
+}
+/*----=========================== Tablet --===========================--*/
+@media screen and (max-width: 1000px) and (min-width: 420px) {
+	#kosmetik {
+		background-image: url($kosmetikBGmedium);
+	}
+	#lichtkosmetik {
+		background-image: url($lichtkosmetikBGmedium);
+	}
+}

@@ -1,0 +1,89 @@
+/*--========================= Bilder =========================--*/
+/*--========================= Text =========================--*/
+/*--========================= Hintergrund =========================--*/
+/*--========================= Borders =========================--*/
+/*--========================= Input =========================--*/
+#kosmetik {
+  background-image: url("../img/kosmetikBG.png");
+}
+
+#lichtkosmetik {
+  background-image: url("../img/lichtkosmetikBG.png");
+}
+
+.card-group {
+  padding: 0 50px 25px 50px;
+  justify-content: center;
+  background-color: #F19953;
+}
+
+.card {
+  height: -moz-fit-content;
+  height: fit-content;
+  min-width: 270px;
+  max-width: 270px;
+  margin: 50px 25px 50px 25px;
+  padding: 0;
+  border: 1px solid grey;
+  border-radius: 0;
+  box-shadow: 5px 5px 7px grey;
+  background-color: white;
+}
+.card h5 {
+  color: #373737;
+}
+.card .card-body > a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #6a6a6a;
+}
+.card .card-body > a:hover {
+  background-color: #505050;
+}
+.card .card-body > a:active {
+  background-color: #353535;
+}
+
+.card-group > .card + .card {
+  border: 1px solid grey;
+  border-radius: 0;
+}
+
+#preisliste {
+  padding: 25px 50px 50px 50px;
+}
+#preisliste h5 {
+  color: #373737;
+}
+
+table {
+  margin: 0 auto;
+  table-layout: fixed;
+}
+table tr * {
+  word-wrap: break-word;
+}
+
+/*----=========================== Handy --===========================--*/
+@media screen and (max-width: 420px) {
+  #kosmetik {
+    background-image: url("../img/kosmetikBGSmall.png");
+  }
+  #lichtkosmetik {
+    background-image: url("../img/lichtkosmetikBGSmall.png");
+  }
+  #preisliste {
+    padding: 25px 15px 50px 15px;
+  }
+}
+/*----=========================== Tablet --===========================--*/
+@media screen and (max-width: 1000px) and (min-width: 420px) {
+  #kosmetik {
+    background-image: url("../img/kosmetikBGmedium.png");
+  }
+  #lichtkosmetik {
+    background-image: url("../img/lichtkosmetikBGmedium.png");
+  }
+}/*# sourceMappingURL=underpage.css.map */
