@@ -32,14 +32,14 @@
 		color: white;
 		text-decoration: none;
 		padding: 5px;
-		border-radius: 5px;
-		background-color: $linkBG;
+		border: 1px solid grey;
+		background-color: $readmore;
 	}
 	.card-body > a:hover {
-		background-color: $linkBG_hover;
+		background-color: $readmore_hover;
 	}
 	.card-body > a:active {
-		background-color: $linkBG_click;
+		background-color: $readmore_click;
 	}
 }
 

@@ -14,7 +14,7 @@
 .card-group {
   padding: 0 50px 25px 50px;
   justify-content: center;
-  background-color: #F19953;
+  background-color: #eea162;
 }
 
 .card {
@@ -36,14 +36,14 @@
   color: white;
   text-decoration: none;
   padding: 5px;
-  border-radius: 5px;
-  background-color: #6a6a6a;
+  border: 1px solid grey;
+  background-color: #6BAA75;
 }
 .card .card-body > a:hover {
-  background-color: #505050;
+  background-color: #578b60;
 }
 .card .card-body > a:active {
-  background-color: #353535;
+  background-color: #6BAA75;
 }
 
 .card-group > .card + .card {

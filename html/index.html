@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../css/main.css" />
 
+
 		<title>Index</title>
 	</head>
 	<body>
@@ -57,7 +58,7 @@
 									</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="kulturdimension.html">kulturdimension</a>
+									<a class="nav-link" href="kulturdimension.html">Kulturdimension</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="quiz.html"
@@ -74,21 +75,21 @@
 				<!-- Auswahl Angebot -->
 				<div class="choose">
 					<!-- Text in Mitte -->
-					<h3>Schönheit<br />&<br />Verj&uuml;ngung</h3>
-					<span>Das pure Wohlbefinden</span>
+					<h3>Elfenbeink&uuml;ste</h3>
+					<!-- <span>Das pure Wohlbefinden</span> -->
 					<!-- Buttons -->
 					<div class="half switch" id="left">
-						<a href="kosmetik.html">Kosmetik</a>
+						<a href="#beschreibung">Informationen</a>
 					</div>
 					<div class="half switch" id="right">
-						<a href="licht-kosmetik.html">Energie & Verj&uuml;ngung</a>
+						<a href="#startup">Unser Start-Up</a>
 					</div>
 				</div>
 				<!-- Beschreibung -->
-				<div id="beschreibung" class="row">
-					<!-- Kosmetik -->
+				<div id="beschreibung" class="row ">
+					<!-- Eigenschaften der Gesellschaft -->
 					<div class="col infoBox half">
-						<h2>Kosmetik</h2>
+						<h2>Eigenschaften der Gesellschaft</h2>
 						<br />
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
@@ -96,9 +97,9 @@
 							In, reprehenderit provident.
 						</p>
 					</div>
-					<!-- Lichtkosmetik -->
+					<!-- Anforderungen -->
 					<div class="col infoBox half">
-						<h2>Energie & Verj&uuml;ngung</h2>
+						<h2>Anforderung an uns</h2>
 						<br />
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
@@ -107,15 +108,62 @@
 						</p>
 					</div>
 				</div>
-			</main>
+				<div id="beschreibung" class="row ">
+					<!-- VIDEO Eigenschaften der Gesellschaft -->
+					<div class="col infoBox half">
+						<p>
+							Video
+						</p>
+					</div>
+					<!-- VIDEO Anforderungen -->
+					<div class="col infoBox half">
+						<p>
+							Video
+						</p>
+					</div>
+				</div>
 
+
+
+				<div class="row paragraph" id="startup">
+					<h2>Unser Start-Up</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam rem neque ut 
+						doloremque, fugiat quas quo delectus velit facilis. Maxime eum sunt architecto tempora 
+						cum blanditiis exercitationem odio totam veritatis, illo at magni. Perspiciatis harum 
+						nostrum nobis rerum ipsam est vero vel, rem velit ducimus obcaecati labore eaque 
+						itaque dolores quos voluptate sed doloribus temporibus necessitatibus ipsa 
+						magnam animi!
+					</p>
+				</div>
+			</main>
+					
 			<!-- Schluss -->
 			<footer class="container">
+				<!-- Modal -->
+				<div class="modal fade" id="quellen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel">Quellen</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+						Test yay
+						</div>
+					</div>
+					</div>
+				</div>
 				
 				<!-- Allg. Infos -->
 				<div class="row" id="allgInfo">
-					<span
-						>&copy; 2023 Kosmetikstudio Sarka |
+					<span>
+
+						<!-- Button trigger modal -->
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#quellen">
+							Quellen
+						</button> | 
+						&copy; 2024 Gruppe 2 - Elfenbeink&uuml;ste <!-- |
 						<a href="https.www.instagramm.com">
 							<img
 								src="../img/icon/instgram_icon.png"
@@ -130,13 +178,15 @@
 								alt="Facebook Icon"
 								loading="lazy"
 							/>
-						</a>
-						| <a href="./impressum.html">Impressum</a> |
-						<a href="./datenschutz.html">Datenschutzerkl&auml;rung</a>
+						</a> -->
 					</span>
 				</div>
 			</footer>
 		</div>
+
+		
+  
+  
 
 		<script src="../js/scroll.js"></script>
 		<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>

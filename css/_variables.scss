@@ -2,7 +2,7 @@
 $logoNormal: 100px;
 $logoMiddle: 100px;
 $logoSmall: 50px;
-$picBG: "../img/chooseBG.png";
+$picBG: "../resources/img/titleBild.jpg";
 $picBGSmall: "../img/chooseBGSmall.png";
 $picBGMedium: "../img/chooseBGMed.png";
 $kosmetikBG: "../img/kosmetikBG.png";
@@ -27,14 +27,22 @@ $standOut: #373737;
 /*--========================= Hintergrund =========================--*/
 $background: var(--bs-body-color);
 $textBG: #f6f5f5; //#FDF7FA
-$textBG_dark: #F19953;
+$textBG_dark: #eea162;
+
 $linkBG: #6a6a6a;
 $linkBG_hover: #505050;
 $linkBG_click: #353535;
-$footerBG: #F19953;
-$bgNavbar: #f8a969;
+
+$readmore: #6BAA75;
+$readmore_hover: #578b60;
+$readmore_click: #6BAA75;
+
+$footerBG: #eea162;
+$bgNavbar: #f9b57c;
+
 $filterLeft: var(--bs-purple);
 $filterRight: var(--bs-green);
+
 $infoBox: var(--bs-blue);
 $bgInfobox: #efefef;
 

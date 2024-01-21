@@ -6,6 +6,7 @@
 body {
 	background-color: $background;
 }
+
 a {
 	cursor: pointer;
 	cursor: hand;
@@ -23,7 +24,7 @@ a {
 }
 
 .half {
-	width: 50%;
+	// width: 50%;
 	display: inline-block;
 	margin: 0 40px;
 }
@@ -71,9 +72,7 @@ header {
 		justify-content: center;
 		align-items: center;
 	}
-	.half {
-		flex-basis: 50%;
-	}
+
 
 	#headthings {
 		text-align: right;
@@ -135,7 +134,7 @@ header {
 		font-size: $textSizeChoose;
 		font-weight: bold;
 		text-align: center;
-		font-family: cursive;
+		font-family: Arial, sans-serif;
 		text-shadow: 0px 0 1px rgba(0, 0, 0, 0.5);
 		z-index: 1;
 	}
@@ -192,18 +191,17 @@ header {
 	}
 }
 
-#standort {
+.paragraph {
 	text-align: center;
-	margin: 25px;
-	> * {
-	}
+	max-width: 70%;
+	margin: 25px auto;
 	h2 {
 		color: $standOut;
 	}
-	iframe {
+	/* iframe {
 		width: 90%;
 		border: 2px solid black;
-	}
+	} */
 }
 
 /* Tabele */
@@ -215,10 +213,11 @@ header {
 footer {
 	background-color: $footerBG;
 	padding: 50px;
+	
 	* {
 		color: $textFooter;
 	}
-	div > div {
+	div {
 		padding: 10px;
 		text-align: center;
 	}
