@@ -32,17 +32,17 @@
 .card h5 {
   color: #373737;
 }
-.card .card-body > a {
+.card .card-body > form > .accButton {
   color: white;
   text-decoration: none;
   padding: 5px;
   border: 1px solid grey;
   background-color: #6BAA75;
 }
-.card .card-body > a:hover {
+.card .card-body > form:hover > .accButton {
   background-color: #578b60;
 }
-.card .card-body > a:active {
+.card .card-body > form:active > .accButton {
   background-color: #6BAA75;
 }
 
@@ -51,19 +51,15 @@
   border-radius: 0;
 }
 
-#preisliste {
-  padding: 25px 50px 50px 50px;
-}
-#preisliste h5 {
-  color: #373737;
+.accordion .accordion-item .accordion-header .accordion-button {
+  background-color: rgba(107, 170, 118, 0.337254902);
+  color: black;
 }
 
-table {
-  margin: 0 auto;
-  table-layout: fixed;
-}
-table tr * {
-  word-wrap: break-word;
+.accButton {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: white;
 }
 
 /*----=========================== Handy --===========================--*/
@@ -73,9 +69,6 @@ table tr * {
   }
   #lichtkosmetik {
     background-image: url("../img/lichtkosmetikBGSmall.png");
-  }
-  #preisliste {
-    padding: 25px 15px 50px 15px;
   }
 }
 /*----=========================== Tablet --===========================--*/

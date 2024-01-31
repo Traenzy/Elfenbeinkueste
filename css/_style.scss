@@ -7,6 +7,11 @@ body {
 	background-color: $background;
 }
 
+.video {
+	margin: auto;
+	display: block;
+}
+
 a {
 	cursor: pointer;
 	cursor: hand;
@@ -123,7 +128,6 @@ header {
 	// 	right: 0;
 	// 	// @include filter($filterRight, 0.3);
 	// }
-
 	> span,
 	> h3 {
 		position: absolute;

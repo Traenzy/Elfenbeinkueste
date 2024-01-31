@@ -28,17 +28,17 @@
 		color: $standOut;
 	}
 	//lese mehr
-	.card-body > a {
+	.card-body > form > .accButton {
 		color: white;
 		text-decoration: none;
 		padding: 5px;
 		border: 1px solid grey;
 		background-color: $readmore;
 	}
-	.card-body > a:hover {
+	.card-body > form:hover > .accButton{
 		background-color: $readmore_hover;
 	}
-	.card-body > a:active {
+	.card-body > form:active > .accButton{
 		background-color: $readmore_click;
 	}
 }
@@ -49,26 +49,18 @@
 	border-radius: 0;
 }
 
-#preisliste {
-	padding: 25px 50px 50px 50px;
-	h5 {
-		color: $standOut;
+.accordion .accordion-item {
+	.accordion-header .accordion-button {
+		background-color: $accordion-color;
+		color: black;
 	}
+}
+.accButton {
+	background-color: #ffffff00;
+	border: none;
+	color: white;
 }
 
-table {
-	margin: 0 auto;
-	table-layout: fixed;
-	tr {
-		* {
-			word-wrap: break-word;
-		}
-		// *:last-child {
-		// 	text-align: right;
-		// 	width: 360px;
-		// }
-	}
-}
 /*----=========================== Handy --===========================--*/
 @media screen and (max-width: 420px) {
 	#kosmetik {
@@ -78,10 +70,6 @@ table {
 		background-image: url($lichtkosmetikBGsmall);
 	}
 
-	//Preisliste
-	#preisliste {
-		padding: 25px 15px 50px 15px;
-	}
 }
 /*----=========================== Tablet --===========================--*/
 @media screen and (max-width: 1000px) and (min-width: 420px) {
