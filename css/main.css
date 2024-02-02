@@ -10849,7 +10849,7 @@ header .head {
   padding: 25px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 header #headthings {
@@ -10880,7 +10880,7 @@ header nav .dropdown-menu {
   height: 100vh;
   text-align: center;
   margin: auto;
-  background-image: url("../resources/img/titleBild.jpg");
+  background-image: url("../resources/img/titleBild2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(10%) contrast(100%);
