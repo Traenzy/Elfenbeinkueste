@@ -143,7 +143,6 @@ header {
 		z-index: 1;
 	}
 
-	/* Text */
 	> :first-child {
 		font-weight: 400;
 		font-size: 4.5rem;
@@ -151,7 +150,6 @@ header {
 		top: 30%;
 	}
 
-	/* Das Pure Wohlbefinden*/
 	> span {
 		font-weight: 300;
 		font-size: 2rem;
@@ -159,8 +157,7 @@ header {
 	}
 
 	/* Linke Seite Buttons */
-	#left,
-	#right {
+	#middle {
 		font-size: 25px;
 		// width: ;
 		position: absolute;
@@ -170,13 +167,11 @@ header {
 		border: none;
 	}
 
-	#left {
-		left: 20%;
+	#middle {
+		left: 45%;
 	}
 
-	#right {
-		right: 20%;
-	}
+	
 }
 
 #beschreibung, #informationen {
@@ -207,12 +202,6 @@ header {
 		border: 2px solid black;
 	} */
 }
-
-/* Tabele */
-
-// th:last-child {
-// 	text-align: left;
-// }
 /*----=========================== Footer --===========================--*/
 footer {
 	background-color: $footerBG;

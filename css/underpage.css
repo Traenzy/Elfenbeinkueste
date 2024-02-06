@@ -3,14 +3,6 @@
 /*--========================= Hintergrund =========================--*/
 /*--========================= Borders =========================--*/
 /*--========================= Input =========================--*/
-#kosmetik {
-  background-image: url("../img/kosmetikBG.png");
-}
-
-#lichtkosmetik {
-  background-image: url("../img/lichtkosmetikBG.png");
-}
-
 .card-group {
   padding: 0 50px 25px 50px;
   justify-content: center;
@@ -85,23 +77,4 @@ input:checked {
 
 .sub:hover {
   background-color: #6BAA75;
-}
-
-/*----=========================== Handy --===========================--*/
-@media screen and (max-width: 420px) {
-  #kosmetik {
-    background-image: url("../img/kosmetikBGSmall.png");
-  }
-  #lichtkosmetik {
-    background-image: url("../img/lichtkosmetikBGSmall.png");
-  }
-}
-/*----=========================== Tablet --===========================--*/
-@media screen and (max-width: 1000px) and (min-width: 420px) {
-  #kosmetik {
-    background-image: url("../img/kosmetikBGmedium.png");
-  }
-  #lichtkosmetik {
-    background-image: url("../img/lichtkosmetikBGmedium.png");
-  }
 }/*# sourceMappingURL=underpage.css.map */

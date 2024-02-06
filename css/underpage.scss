@@ -1,12 +1,5 @@
 @import "./function";
 @import "./variables";
-//hintergrund Bild
-#kosmetik {
-	background-image: url($kosmetikBG);
-}
-#lichtkosmetik {
-	background-image: url($lichtkosmetikBG);
-}
 // Auswahl Cards
 .card-group {
 	padding: 0 50px 25px 50px;
@@ -85,25 +78,4 @@ input:checked {
 }
 .sub:hover {
 	background-color: $readmore_click;
-}
-
-
-/*----=========================== Handy --===========================--*/
-@media screen and (max-width: 420px) {
-	#kosmetik {
-		background-image: url($kosmetikBGsmall);
-	}
-	#lichtkosmetik {
-		background-image: url($lichtkosmetikBGsmall);
-	}
-
-}
-/*----=========================== Tablet --===========================--*/
-@media screen and (max-width: 1000px) and (min-width: 420px) {
-	#kosmetik {
-		background-image: url($kosmetikBGmedium);
-	}
-	#lichtkosmetik {
-		background-image: url($lichtkosmetikBGmedium);
-	}
 }

@@ -10885,8 +10885,6 @@ header nav .dropdown-menu {
   background-repeat: no-repeat;
   filter: grayscale(10%) contrast(100%);
   /* Bild färben*/
-  /* Text */
-  /* Das Pure Wohlbefinden*/
   /* Linke Seite Buttons */
 }
 .choose > span,
@@ -10915,8 +10913,7 @@ header nav .dropdown-menu {
   font-size: 2rem;
   top: 65%;
 }
-.choose #left,
-.choose #right {
+.choose #middle {
   font-size: 25px;
   position: absolute;
   top: 85%;
@@ -10924,11 +10921,8 @@ header nav .dropdown-menu {
   margin: 0;
   border: none;
 }
-.choose #left {
-  left: 20%;
-}
-.choose #right {
-  right: 20%;
+.choose #middle {
+  left: 45%;
 }
 
 #beschreibung, #informationen {
@@ -10961,7 +10955,6 @@ header nav .dropdown-menu {
   color: #373737;
 }
 
-/* Tabele */
 /*----=========================== Footer --===========================--*/
 footer {
   background-color: #eea162;
