@@ -1,16 +1,18 @@
 function checkQuiz() {
     var correctAnswers = {
-        q1: "Westlich von Afrika",
-        q2: "Sehr ausgeprägt",
-        q3: "60",
-        q4: "",
-        q5: ""
+        q1: "3",
+        q2: "1",
+        q3: "2",
+        q4: "1",
+        q5: "1"
     };
 
     var userAnswers = {};
     var questions = document.querySelectorAll('input[type=radio]:checked');
 
     questions.forEach(function (question) {
+        console.log(question.name);
+        console.log(question.value);
         var name = question.name;
         var value = question.value;
         userAnswers[name] = value;
